@@ -1,0 +1,38 @@
+[
+  {
+    "id": "root",
+    "type": "reassurance",
+    "content": "It is completely normal for babies to cry. You are doing a great job.",
+    "next": "check-physical"
+  },
+  {
+    "id": "check-physical",
+    "type": "action",
+    "title": "Check Physical Needs",
+    "content": "Is the baby hungry, tired, or in need of a diaper change?",
+    "options": [
+      { "label": "Yes, addressing it", "next": "soothe" },
+      { "label": "No, checked everything", "next": "comfort" }
+    ]
+  },
+  {
+    "id": "soothe",
+    "type": "reassurance",
+    "content": "Take care of their needs. You're doing the right thing.",
+    "next": "root"
+  },
+  {
+    "id": "comfort",
+    "type": "action",
+    "title": "Comfort Techniques",
+    "content": "Try swaddling, rocking, or white noise.",
+    "next": "check-medical"
+  },
+  {
+    "id": "check-medical",
+    "type": "warning",
+    "title": "When to get help",
+    "content": "If the baby has a fever over 100.4°F (38°C) or seems in pain, call your pediatrician.",
+    "next": "root"
+  }
+]
